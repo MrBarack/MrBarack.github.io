@@ -15,7 +15,7 @@
 <meta property="og:description" content="What is CORS ? CORS full name is Cross Origin Resource Sharing, each page need to return a http header named Access-Control-Allow-Origin to allow other host to access.  If a request need to be allowed">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-16T09:25:36.000Z">
-<meta property="article:modified_time" content="2020-02-16T10:03:43.340Z">
+<meta property="article:modified_time" content="2020-02-22T15:09:02.144Z">
 <meta property="article:author" content="Barack Chen">
 <meta property="article:tag" content="Springboot">
 <meta name="twitter:card" content="summary">
@@ -100,7 +100,7 @@
         <h2 id="What-is-CORS"><a href="#What-is-CORS" class="headerlink" title="What is CORS ?"></a>What is CORS ?</h2><blockquote>
 <p><strong>CORS</strong> full name is <strong>Cross Origin Resource Sharing</strong>, each page need to return a http header named <strong>Access-Control-Allow-Origin</strong> to allow other host to access.</p>
 </blockquote>
-<p>If a request need to be allowed CORS, we need to set up the <strong>Access-Control-Allow-Origin</strong> to determine what sites to access.</p>
+<p>If a request need to be allowed CORS, we need to set up the <strong>Access-Control-Allow-Origin</strong> to determine what sites to access.hex</p>
 <p>Access-Control-Allow-Origin:<a href="https://www.google.com" target="_blank" rel="noopener">https://www.google.com</a>.</p>
 <h3 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution 1"></a>Solution 1</h3><p>Use <code>@CrossOrigin</code> annotation on <code>Controller</code></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/hello"</span>)</span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@CrossOrigin</span>(<span class="string">"https://www.google.com"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CrosTestController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"/world"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">helloWorld</span><span class="params">()</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="string">"Hello World!"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -131,6 +131,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2020/02/22/springboot-autowired/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          springboot_autowired
+        
+      </div>
+    </a>
   
   
     <a href="/2020/02/16/favorite-links/" id="article-nav-older" class="article-nav-link-wrap">
@@ -193,6 +202,10 @@
       <ul>
         
           <li>
+            <a href="/2020/02/22/springboot-autowired/">springboot_autowired</a>
+          </li>
+        
+          <li>
             <a href="/2020/02/16/springboot-CORS/">Springboot CORS Issue</a>
           </li>
         
@@ -206,10 +219,6 @@
         
           <li>
             <a href="/2020/02/02/test-my-markdown/">Test my Markdown</a>
-          </li>
-        
-          <li>
-            <a href="/2020/02/02/hello-world/">Hello World</a>
           </li>
         
       </ul>
