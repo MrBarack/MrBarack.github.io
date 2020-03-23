@@ -70,6 +70,98 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-GitHub-SSH" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/23/GitHub-SSH/" class="article-date">
+  <time datetime="2020-03-23T00:29:02.000Z" itemprop="datePublished">2020-03-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Git/">Git</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/23/GitHub-SSH/">GitHub_SSH</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1,<br>git config –global user.name “GitHub Username”<br>git config –global user.email “GitHub Email”<br>2,<br><code>ssh-keygen -t rsa -C &quot;email@xxx.com&quot;</code><br>3,<br>press enter for three times, without password by default<br>4,<br>find the id_rsa.pub in your User folder under disk C:/<br>5,<br>Copy the codes and paste it to GitHub Setting Keys with random title.<br>6,<br>Go back to the command line with:<code>ssh git@github.com</code></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/23/GitHub-SSH/" data-id="ck83rp53i0000l0mndqfhfkse" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Yarn-Command" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/22/Yarn-Command/" class="article-date">
+  <time datetime="2020-03-22T13:44:40.000Z" itemprop="datePublished">2020-03-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Node/">Node</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/22/Yarn-Command/">Yarn_Command</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn --verison</span><br></pre></td></tr></table></figure>
+<p>yarn : File C:\Users\Administrator\AppData\Roaming\npm\yarn.ps1 cannot be loaded because running<br>scripts is disabled on this system.</p>
+<p>If you encounter above error message when you try to run yarn, that means the Windows system’s executionPolicy help you to block the untruct script.</p>
+<p>Please try to run below command to resolve the problem:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set-ExecutionPolicy RemoteSigned</span><br></pre></td></tr></table></figure>
+
+<p>After that please try once again.</p>
+<p>Please refer below command for <code>yarn</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ yarn init</span><br><span class="line">$ yarn config list</span><br><span class="line">$ yarn install</span><br><span class="line">$ yarn init</span><br><span class="line">$ yarn init</span><br><span class="line">$ yarn add [package]</span><br><span class="line">$ yarn add [package]@[version]</span><br><span class="line">$ yarn add [package]@[tag]</span><br><span class="line">$ yarn add --dev/-D</span><br><span class="line">$ yarn remove [package]</span><br><span class="line">$ yarn cache list</span><br><span class="line">$ yarn global add [package]</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/22/Yarn-Command/" data-id="ck83rp5480005l0mn4llbaf51" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Yarn/" rel="tag">Yarn</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-linux-command" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/02/24/linux-command/" class="article-date">
@@ -104,7 +196,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/24/linux-command/" data-id="ck6zaume20006qsmn16d58wfv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/24/linux-command/" data-id="ck83rp54d0008l0mnaalhcc92" class="article-share-link">Share</a>
       
       
     </footer>
@@ -159,7 +251,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/24/VMware-CentOs/" data-id="ck6zaumdf0000qsmnbnt8fm67" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/24/VMware-CentOs/" data-id="ck83rp53z0002l0mnfhv4gbk7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nginx/" rel="tag">Nginx</a></li></ul>
@@ -214,7 +306,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/22/springboot-autowired/" data-id="ck6zaume60008qsmn4jem7iuu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/22/springboot-autowired/" data-id="ck83rp558000vl0mn2idlczpt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Springboot/" rel="tag">Springboot</a></li></ul>
@@ -276,7 +368,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/16/springboot-CORS/" data-id="ck6zaume40007qsmnch779tbq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/16/springboot-CORS/" data-id="ck83rp556000ul0mnaq71crao" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Springboot/" rel="tag">Springboot</a></li></ul>
@@ -319,7 +411,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/16/favorite-links/" data-id="ck6zaumdw0002qsmnfbdz0oml" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/16/favorite-links/" data-id="ck83rp54b0007l0mn5asn1v9i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -368,7 +460,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/16/springboot-pom-error/" data-id="ck6zaumeb000cqsmng8wc9tl0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/16/springboot-pom-error/" data-id="ck83rp54f000al0mn61vg1ye1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Springboot/" rel="tag">Springboot</a></li></ul>
@@ -431,7 +523,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/02/test-my-markdown/" data-id="ck6zaumed000dqsmn48xc3pmx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/02/test-my-markdown/" data-id="ck83rp54h000dl0mnd5bl11u2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -464,7 +556,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">$ hexo n <span class="string">"我的博客"</span> == hexo new <span class="string">"我的博客"</span> <span class="comment">#新建文章</span></span><br><span class="line">$ hexo g == hexo generate <span class="comment">#生成</span></span><br><span class="line">$ hexo s == hexo server <span class="comment">#启动服务预览</span></span><br><span class="line">$ hexo d == hexo deploy <span class="comment">#部署</span></span><br><span class="line"></span><br><span class="line">$ hexo server <span class="comment">#Hexo会监视文件变动并自动更新，无须重启服务器</span></span><br><span class="line">$ hexo server -s <span class="comment">#静态模式</span></span><br><span class="line">$ hexo server -p 5000 <span class="comment">#更改端口</span></span><br><span class="line">$ hexo server -i 192.168.1.1 <span class="comment">#自定义 IP</span></span><br><span class="line">$ hexo clean <span class="comment">#清除缓存，若是网页正常情况下可以忽略这条命令</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -480,7 +572,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/02/hello-world/" data-id="ck6zaumf4000vqsmn33u933xw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/02/hello-world/" data-id="ck83rp54j000gl0mncx8d6kej" class="article-share-link">Share</a>
       
       
     </footer>
@@ -500,7 +592,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Useful/">Useful</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Node/">Node</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Useful/">Useful</a></li></ul>
     </div>
   </div>
 
@@ -510,7 +602,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nginx/" rel="tag">Nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Springboot/" rel="tag">Springboot</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nginx/" rel="tag">Nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Springboot/" rel="tag">Springboot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Yarn/" rel="tag">Yarn</a></li></ul>
     </div>
   </div>
 
@@ -520,7 +612,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Nginx/" style="font-size: 10px;">Nginx</a> <a href="/tags/Springboot/" style="font-size: 20px;">Springboot</a>
+      <a href="/tags/Nginx/" style="font-size: 10px;">Nginx</a> <a href="/tags/Springboot/" style="font-size: 20px;">Springboot</a> <a href="/tags/Yarn/" style="font-size: 10px;">Yarn</a>
     </div>
   </div>
 
@@ -529,7 +621,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li></ul>
     </div>
   </div>
 
@@ -542,6 +634,14 @@
       <ul>
         
           <li>
+            <a href="/2020/03/23/GitHub-SSH/">GitHub_SSH</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/22/Yarn-Command/">Yarn_Command</a>
+          </li>
+        
+          <li>
             <a href="/2020/02/24/linux-command/">Linux Command</a>
           </li>
         
@@ -551,14 +651,6 @@
         
           <li>
             <a href="/2020/02/22/springboot-autowired/">Springboot Usage of @Autowired</a>
-          </li>
-        
-          <li>
-            <a href="/2020/02/16/springboot-CORS/">Springboot CORS Issue</a>
-          </li>
-        
-          <li>
-            <a href="/2020/02/16/favorite-links/">Favorite Links</a>
           </li>
         
       </ul>

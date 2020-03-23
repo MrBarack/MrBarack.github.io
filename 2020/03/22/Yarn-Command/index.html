@@ -5,16 +5,19 @@
   
 
   
-  <title>Archives: 2020 | Barack&#39;s Blog</title>
+  <title>Yarn_Command | Barack&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Barack&#39;s Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Barack&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="1yarn --verison yarn : File C:\Users\Administrator\AppData\Roaming\npm\yarn.ps1 cannot be loaded because runningscripts is disabled on this system. If you encounter above error message when you try to">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Yarn_Command">
+<meta property="og:url" content="http://yoursite.com/2020/03/22/Yarn-Command/index.html">
 <meta property="og:site_name" content="Barack&#39;s Blog">
-<meta property="og:description" content="Barack&#39;s Blog">
+<meta property="og:description" content="1yarn --verison yarn : File C:\Users\Administrator\AppData\Roaming\npm\yarn.ps1 cannot be loaded because runningscripts is disabled on this system. If you encounter above error message when you try to">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-22T13:44:40.000Z">
+<meta property="article:modified_time" content="2020-03-22T13:58:42.243Z">
 <meta property="article:author" content="Barack Chen">
+<meta property="article:tag" content="Yarn">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Barack&#39;s Blog" type="application/atom+xml">
@@ -68,211 +71,75 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/03/23/GitHub-SSH/" class="archive-article-date">
-  <time datetime="2020-03-23T00:29:02.000Z" itemprop="datePublished">Mar 23</time>
+        <section id="main"><article id="post-Yarn-Command" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/22/Yarn-Command/" class="article-date">
+  <time datetime="2020-03-22T13:44:40.000Z" itemprop="datePublished">2020-03-22</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Node/">Node</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/23/GitHub-SSH/">GitHub_SSH</a>
+    <h1 class="article-title" itemprop="name">
+      Yarn_Command
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/03/22/Yarn-Command/" class="archive-article-date">
-  <time datetime="2020-03-22T13:44:40.000Z" itemprop="datePublished">Mar 22</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/03/22/Yarn-Command/">Yarn_Command</a>
-    </h1>
-  
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn --verison</span><br></pre></td></tr></table></figure>
+<p>yarn : File C:\Users\Administrator\AppData\Roaming\npm\yarn.ps1 cannot be loaded because running<br>scripts is disabled on this system.</p>
+<p>If you encounter above error message when you try to run yarn, that means the Windows system’s executionPolicy help you to block the untruct script.</p>
+<p>Please try to run below command to resolve the problem:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set-ExecutionPolicy RemoteSigned</span><br></pre></td></tr></table></figure>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/02/24/linux-command/" class="archive-article-date">
-  <time datetime="2020-02-23T17:18:30.000Z" itemprop="datePublished">Feb 24</time>
-</a>
+<p>After that please try once again.</p>
+<p>Please refer below command for <code>yarn</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ yarn init</span><br><span class="line">$ yarn config list</span><br><span class="line">$ yarn install</span><br><span class="line">$ yarn init</span><br><span class="line">$ yarn init</span><br><span class="line">$ yarn add [package]</span><br><span class="line">$ yarn add [package]@[version]</span><br><span class="line">$ yarn add [package]@[tag]</span><br><span class="line">$ yarn add --dev/-D</span><br><span class="line">$ yarn remove [package]</span><br><span class="line">$ yarn cache list</span><br><span class="line">$ yarn global add [package]</span><br></pre></td></tr></table></figure>
+
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/24/linux-command/">Linux Command</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/02/24/VMware-CentOs/" class="archive-article-date">
-  <time datetime="2020-02-23T16:53:52.000Z" itemprop="datePublished">Feb 24</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/22/Yarn-Command/" data-id="ck83rp5480005l0mn4llbaf51" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/24/VMware-CentOs/">VMware install CentOs with Nginx</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/02/22/springboot-autowired/" class="archive-article-date">
-  <time datetime="2020-02-22T15:07:35.000Z" itemprop="datePublished">Feb 22</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/22/springboot-autowired/">Springboot Usage of @Autowired</a>
-    </h1>
-  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Yarn/" rel="tag">Yarn</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/02/16/springboot-CORS/" class="archive-article-date">
-  <time datetime="2020-02-16T09:25:36.000Z" itemprop="datePublished">Feb 16</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/16/springboot-CORS/">Springboot CORS Issue</a>
-    </h1>
+    <a href="/2020/03/23/GitHub-SSH/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          GitHub_SSH
+        
+      </div>
+    </a>
   
+  
+    <a href="/2020/02/24/linux-command/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Linux Command</div>
+    </a>
+  
+</nav>
 
-    </header>
-  </div>
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/02/16/favorite-links/" class="archive-article-date">
-  <time datetime="2020-02-16T09:02:31.000Z" itemprop="datePublished">Feb 16</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/16/favorite-links/">Favorite Links</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/02/16/springboot-pom-error/" class="archive-article-date">
-  <time datetime="2020-02-16T08:43:09.000Z" itemprop="datePublished">Feb 16</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/16/springboot-pom-error/">Error in pom for srpingboot 2.X</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/02/02/test-my-markdown/" class="archive-article-date">
-  <time datetime="2020-02-02T14:11:32.000Z" itemprop="datePublished">Feb 2</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/02/test-my-markdown/">Test my Markdown</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/02/02/hello-world/" class="archive-article-date">
-  <time datetime="2020-02-02T14:09:01.168Z" itemprop="datePublished">Feb 2</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/02/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
 
 </section>
         
