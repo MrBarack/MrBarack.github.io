@@ -15,7 +15,7 @@
 <meta property="og:description" content="1yarn --verison yarn : File C:\Users\Administrator\AppData\Roaming\npm\yarn.ps1 cannot be loaded because runningscripts is disabled on this system. If you encounter above error message when you try to">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-22T13:44:40.000Z">
-<meta property="article:modified_time" content="2020-03-22T13:58:42.243Z">
+<meta property="article:modified_time" content="2020-04-11T15:46:06.637Z">
 <meta property="article:author" content="Barack Chen">
 <meta property="article:tag" content="Yarn">
 <meta name="twitter:card" content="summary">
@@ -101,6 +101,9 @@
 <p>yarn : File C:\Users\Administrator\AppData\Roaming\npm\yarn.ps1 cannot be loaded because running<br>scripts is disabled on this system.</p>
 <p>If you encounter above error message when you try to run yarn, that means the Windows system’s executionPolicy help you to block the untruct script.</p>
 <p>Please try to run below command to resolve the problem:</p>
+<p>1, Find Windows Powershell</p>
+<p>2, Right click and run as Administrator</p>
+<p>3, Run below command</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set-ExecutionPolicy RemoteSigned</span><br></pre></td></tr></table></figure>
 
 <p>After that please try once again.</p>
@@ -149,7 +152,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Node/">Node</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Useful/">Useful</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Node/">Node</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Useful/">Useful</a></li></ul>
     </div>
   </div>
 
@@ -159,7 +162,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nginx/" rel="tag">Nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Springboot/" rel="tag">Springboot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Yarn/" rel="tag">Yarn</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ajax/" rel="tag">Ajax</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nginx/" rel="tag">Nginx</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Springboot/" rel="tag">Springboot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Yarn/" rel="tag">Yarn</a></li></ul>
     </div>
   </div>
 
@@ -169,7 +172,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Nginx/" style="font-size: 10px;">Nginx</a> <a href="/tags/Springboot/" style="font-size: 20px;">Springboot</a> <a href="/tags/Yarn/" style="font-size: 10px;">Yarn</a>
+      <a href="/tags/Ajax/" style="font-size: 10px;">Ajax</a> <a href="/tags/Nginx/" style="font-size: 10px;">Nginx</a> <a href="/tags/Springboot/" style="font-size: 20px;">Springboot</a> <a href="/tags/Yarn/" style="font-size: 10px;">Yarn</a>
     </div>
   </div>
 
@@ -178,7 +181,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li></ul>
     </div>
   </div>
 
@@ -189,6 +192,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/04/11/Ajax-cache-clearing-IE/">Ajax cache clearing(IE)</a>
+          </li>
         
           <li>
             <a href="/2020/03/23/GitHub-SSH/">GitHub_SSH</a>
@@ -204,10 +211,6 @@
         
           <li>
             <a href="/2020/02/24/VMware-CentOs/">VMware install CentOs with Nginx</a>
-          </li>
-        
-          <li>
-            <a href="/2020/02/22/springboot-autowired/">Springboot Usage of @Autowired</a>
           </li>
         
       </ul>
