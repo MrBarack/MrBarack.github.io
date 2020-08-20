@@ -70,6 +70,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-springboot-pom-error" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/16/springboot-pom-error/" class="article-date">
+  <time datetime="2020-02-16T08:43:09.000Z" itemprop="datePublished">2020-02-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Java/">Java</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/16/springboot-pom-error/">Error in pom for srpingboot 2.X</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>It’s caused by the version, springboot 2.1.5.RELEASE upgrade the maven-jar-plugin.version to 3.1.2, some IDE plugin might be incompatible(Eclipse).</p>
+<ul>
+<li>1, Downgrade the springboot version</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;version&gt;2.0.0.RELEASE&lt;&#x2F;version&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>2, Upgrade the maven jar plugin in pom.xml</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;maven-jar-plugin.version&gt;3.1.1&lt;&#x2F;maven-jar-plugin.version&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/16/springboot-pom-error/" data-id="cke22vlhs0005v8wj2f4b9sk5" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Springboot/" rel="tag">Springboot</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-test-my-markdown" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/02/02/test-my-markdown/" class="article-date">
@@ -121,56 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/02/test-my-markdown/" data-id="ckapkikn4000vdkmn1sgkc4i3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/02/hello-world/" class="article-date">
-  <time datetime="2020-02-02T14:09:01.168Z" itemprop="datePublished">2020-02-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/02/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">$ hexo n <span class="string">"我的博客"</span> == hexo new <span class="string">"我的博客"</span> <span class="comment">#新建文章</span></span><br><span class="line">$ hexo g == hexo generate <span class="comment">#生成</span></span><br><span class="line">$ hexo s == hexo server <span class="comment">#启动服务预览</span></span><br><span class="line">$ hexo d == hexo deploy <span class="comment">#部署</span></span><br><span class="line"></span><br><span class="line">$ hexo server <span class="comment">#Hexo会监视文件变动并自动更新，无须重启服务器</span></span><br><span class="line">$ hexo server -s <span class="comment">#静态模式</span></span><br><span class="line">$ hexo server -p 5000 <span class="comment">#更改端口</span></span><br><span class="line">$ hexo server -i 192.168.1.1 <span class="comment">#自定义 IP</span></span><br><span class="line">$ hexo clean <span class="comment">#清除缓存，若是网页正常情况下可以忽略这条命令</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/02/hello-world/" data-id="ckapkikmp000cdkmn5d33gah3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/02/test-my-markdown/" data-id="cke22vlis0015v8wj6frgb1r0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -224,7 +226,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li></ul>
     </div>
   </div>
 
@@ -235,6 +237,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/08/20/hello-world/">Hello World</a>
+          </li>
         
           <li>
             <a href="/2020/05/26/cypress-testing/">cypress_testing</a>
@@ -250,10 +256,6 @@
         
           <li>
             <a href="/2020/03/22/Yarn-Command/">Yarn_Command</a>
-          </li>
-        
-          <li>
-            <a href="/2020/02/24/linux-command/">Linux Command</a>
           </li>
         
       </ul>
