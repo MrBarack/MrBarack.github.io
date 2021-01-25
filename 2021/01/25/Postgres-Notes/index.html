@@ -5,17 +5,25 @@
   
 
   
-  <title>Barack&#39;s Blog</title>
+  <title>Postgres Notes | Barack&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Barack&#39;s Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Barack&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="CREATE USER 12CREATE USER root WITH PASSWORD &#39;root&#39;;ALTER USER root WITH SUPERUSER;  PARTITION 123456789101112131415161718192021222324&#x2F;*创建分区表*&#x2F;create table test(n int) partition by range(n);create">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Postgres Notes">
+<meta property="og:url" content="http://yoursite.com/2021/01/25/Postgres-Notes/index.html">
 <meta property="og:site_name" content="Barack&#39;s Blog">
-<meta property="og:description" content="Barack&#39;s Blog">
+<meta property="og:description" content="CREATE USER 12CREATE USER root WITH PASSWORD &#39;root&#39;;ALTER USER root WITH SUPERUSER;  PARTITION 123456789101112131415161718192021222324&#x2F;*创建分区表*&#x2F;create table test(n int) partition by range(n);create">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2021/01/25/Postgres-Notes/Postgres-Maintainence.jpg">
+<meta property="og:image" content="http://yoursite.com/2021/01/25/Postgres-Notes/Postgres-Security.jpg">
+<meta property="og:image" content="http://yoursite.com/2021/01/25/Postgres-Notes/Postgres-Monitor.jpg">
+<meta property="og:image" content="http://yoursite.com/2021/01/25/Postgres-Notes/Postgres-Backup.jpg">
+<meta property="article:published_time" content="2021-01-25T13:25:54.000Z">
+<meta property="article:modified_time" content="2021-01-25T17:26:06.403Z">
 <meta property="article:author" content="Barack Chen">
+<meta property="article:tag" content="PostgreSQL">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2021/01/25/Postgres-Notes/Postgres-Maintainence.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Barack&#39;s Blog" type="application/atom+xml">
   
@@ -68,9 +76,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Postgres-Notes" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Postgres-Notes" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/01/25/Postgres-Notes/" class="article-date">
   <time datetime="2021-01-25T13:25:54.000Z" itemprop="datePublished">2021-01-25</time>
@@ -83,8 +89,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/25/Postgres-Notes/">Postgres Notes</a>
+    <h1 class="article-title" itemprop="name">
+      Postgres Notes
     </h1>
   
 
@@ -130,470 +136,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/08/20/hello-world/" class="article-date">
-  <time datetime="2020-08-19T16:34:43.230Z" itemprop="datePublished">2020-08-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/20/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2020/08/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">$ hexo n <span class="string">"我的博客"</span> == hexo new <span class="string">"我的博客"</span> <span class="comment">#新建文章</span></span><br><span class="line">$ hexo g == hexo generate <span class="comment">#生成</span></span><br><span class="line">$ hexo s == hexo server <span class="comment">#启动服务预览</span></span><br><span class="line">$ hexo d == hexo deploy <span class="comment">#部署</span></span><br><span class="line"></span><br><span class="line">$ hexo server <span class="comment">#Hexo会监视文件变动并自动更新，无须重启服务器</span></span><br><span class="line">$ hexo server -s <span class="comment">#静态模式</span></span><br><span class="line">$ hexo server -p 5000 <span class="comment">#更改端口</span></span><br><span class="line">$ hexo server -i 192.168.1.1 <span class="comment">#自定义 IP</span></span><br><span class="line">$ hexo clean <span class="comment">#清除缓存，若是网页正常情况下可以忽略这条命令</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/08/20/hello-world/" data-id="ckkcuetpl000cvwwj67i7h0pv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-cypress-testing" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/05/26/cypress-testing/" class="article-date">
-  <time datetime="2020-05-26T03:47:47.000Z" itemprop="datePublished">2020-05-26</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Javascript/">Javascript</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/26/cypress-testing/">cypress_testing</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">describe(<span class="string">'Given user arrives the login page'</span>, () =&gt; &#123;</span><br><span class="line">    beforeEach(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">        cy.visit(<span class="string">'/'</span>)</span><br><span class="line">        cy.server()</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">    describe(<span class="string">'When user inputs the right phone number'</span>, () =&gt; &#123;</span><br><span class="line">        beforeEach(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">            cy.get(<span class="string">'input[name=phone]'</span>).type(<span class="string">'15521227901'</span>)</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line">        describe(<span class="string">'When user click the send button'</span>, () =&gt; &#123;</span><br><span class="line">            beforeEach(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">                cy.route(<span class="string">'POST'</span>, <span class="string">'/api/send-code'</span>, &#123; <span class="attr">message</span>: <span class="string">'send success'</span> &#125;)</span><br><span class="line">                cy.get(<span class="string">'[data-test=login_send-code]'</span>).click()</span><br><span class="line">            &#125;)</span><br><span class="line"></span><br><span class="line">            describe(<span class="string">'When user click the send button'</span>, () =&gt; &#123;</span><br><span class="line">                beforeEach(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">                    cy.get(<span class="string">'input[name=code]'</span>).type(<span class="string">'1234'</span>)</span><br><span class="line">                &#125;)</span><br><span class="line"></span><br><span class="line">                describe(<span class="string">'When user click the login button'</span>, () =&gt; &#123;</span><br><span class="line">                    beforeEach(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">                        cy.route(<span class="string">'POST'</span>, <span class="string">'/login'</span>, &#123; <span class="attr">message</span>: <span class="string">'login success'</span> &#125;).as(<span class="string">'login'</span>)</span><br><span class="line">                        cy.get(<span class="string">'[data-test=login_login-cta]'</span>).click()</span><br><span class="line">                    &#125;)</span><br><span class="line"></span><br><span class="line">                    it.only(<span class="string">'should match the expected request body'</span>, () =&gt; &#123;</span><br><span class="line">                        cy.wait(<span class="string">'@login'</span>).then(<span class="function"><span class="params">ctx</span> =&gt;</span> &#123;</span><br><span class="line">                            expect(ctx.request.body).to.deep.equal(&#123;</span><br><span class="line">                                phone: <span class="string">'15521227901'</span>,</span><br><span class="line">                                code: <span class="string">'1234'</span></span><br><span class="line">                            &#125;)</span><br><span class="line">                        &#125;)</span><br><span class="line">                    &#125;)</span><br><span class="line"></span><br><span class="line">                    it(<span class="string">'should redirect to the success page'</span>, () =&gt; &#123;</span><br><span class="line">                        cy.url().should(<span class="string">'include'</span>, <span class="string">'/login/success'</span>)</span><br><span class="line">                    &#125;)</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/05/26/cypress-testing/" data-id="ckkcuetpj0007vwwjdjh3g4ez" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cypress/" rel="tag">Cypress</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Ajax-cache-clearing-IE" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/04/11/Ajax-cache-clearing-IE/" class="article-date">
-  <time datetime="2020-04-11T15:47:44.000Z" itemprop="datePublished">2020-04-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Javascript/">Javascript</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/11/Ajax-cache-clearing-IE/">Ajax cache clearing(IE)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>In some case, the IE will cache the data from last get request, so that the browser cannot fetch the latest informaton from service end.<br>It works fine in Chrome so no need for Chrome.</p>
-<p>To solve this issue we have two ways:</p>
-<p>1, Disable the cache in ajax request Header</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> ajax = axios.create(&#123;</span><br><span class="line">  <span class="comment">//avaialbe in IE, fails in chrome</span></span><br><span class="line">  headers:&#123;</span><br><span class="line">    <span class="string">'Pragma'</span>: <span class="string">'no-cache'</span>,</span><br><span class="line">    <span class="string">'Cache-Control'</span>: <span class="string">'no-cache, no-store'</span></span><br><span class="line">  &#125;</span><br><span class="line">  baseURL: api.baseURL,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>2, Disbale the cahce in ajax get request with the updated timestamp</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">ajax.interceptors.request.use(</span><br><span class="line">  <span class="function"><span class="keyword">function</span>(<span class="params">config</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//Mostly for get request, the post request will refresh automatically</span></span><br><span class="line">    <span class="keyword">if</span> (config.params === <span class="string">'get'</span>) &#123;</span><br><span class="line">      config.params = config.parmas || &#123;&#125;</span><br><span class="line">      config.params.t = <span class="built_in">Date</span>.parse(<span class="keyword">new</span> <span class="built_in">Date</span>())/<span class="number">1000</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> token = store.get(<span class="string">"x-auth -token"</span>)</span><br><span class="line">    <span class="keyword">if</span> (token) &#123;</span><br><span class="line">      config.headers[<span class="string">"x-auth-token"</span>] = token</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> config</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(error)</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">ajax.interceptors.response.use(</span><br><span class="line">  <span class="function"><span class="keyword">function</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> authToken = response.headers[<span class="string">'x-auth-token'</span>]</span><br><span class="line">    <span class="keyword">if</span>(authToken) &#123;</span><br><span class="line">      sotre.set(<span class="string">'x-auth-token'</span>, authToken)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> response</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Promise</span>.reject(error)</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/11/Ajax-cache-clearing-IE/" data-id="ckkcuetpe0002vwwj90fh6p6d" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ajax/" rel="tag">Ajax</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-GitHub-SSH" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/23/GitHub-SSH/" class="article-date">
-  <time datetime="2020-03-23T00:29:02.000Z" itemprop="datePublished">2020-03-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Git/">Git</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/23/GitHub-SSH/">GitHub_SSH</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1,<br>git config –global user.name “GitHub Username”<br>git config –global user.email “GitHub Email”<br>2,<br><code>ssh-keygen -t rsa -C &quot;email@xxx.com&quot;</code><br>3,<br>press enter for three times, without password by default<br>4,<br>find the id_rsa.pub in your User folder under disk C:/<br>5,<br>Copy the codes and paste it to GitHub Setting Keys with random title.<br>6,<br>Go back to the command line with:<code>ssh git@github.com</code></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/23/GitHub-SSH/" data-id="ckkcuetp80000vwwj1jbsebsc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Yarn-Command" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/22/Yarn-Command/" class="article-date">
-  <time datetime="2020-03-22T13:44:40.000Z" itemprop="datePublished">2020-03-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Node/">Node</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/22/Yarn-Command/">Yarn_Command</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn --verison</span><br></pre></td></tr></table></figure>
-<p>yarn : File C:\Users\Administrator\AppData\Roaming\npm\yarn.ps1 cannot be loaded because running<br>scripts is disabled on this system.</p>
-<p>If you encounter above error message when you try to run yarn, that means the Windows system’s executionPolicy help you to block the untruct script.</p>
-<p>Please try to run below command to resolve the problem:</p>
-<p>1, Find Windows Powershell</p>
-<p>2, Right click and run as Administrator</p>
-<p>3, Run below command</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set-ExecutionPolicy RemoteSigned</span><br></pre></td></tr></table></figure>
-
-<p>After that please try once again.</p>
-<p>Please refer below command for <code>yarn</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ yarn init</span><br><span class="line">$ yarn config list</span><br><span class="line">$ yarn install</span><br><span class="line">$ yarn init</span><br><span class="line">$ yarn init</span><br><span class="line">$ yarn add [package]</span><br><span class="line">$ yarn add [package]@[version]</span><br><span class="line">$ yarn add [package]@[tag]</span><br><span class="line">$ yarn add --dev/-D</span><br><span class="line">$ yarn remove [package]</span><br><span class="line">$ yarn cache list</span><br><span class="line">$ yarn global add [package]</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/22/Yarn-Command/" data-id="ckkcuetpg0004vwwj1jhobz2m" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Yarn/" rel="tag">Yarn</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux-command" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/24/linux-command/" class="article-date">
-  <time datetime="2020-02-23T17:18:30.000Z" itemprop="datePublished">2020-02-24</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/24/linux-command/">Linux Command</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1, Check the pid<br><code>ps -ef | grep nginx</code></p>
-<p>2, Kill the process with pid<br><code>kill -9 &lt;pid&gt;</code></p>
-<p>3, Close the firewall<br><code>systemctl stop firewalld.service</code></p>
-<p>4, Disable the firewall<br><code>systemctl disable firewalld.service</code></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/24/linux-command/" data-id="ckkcuetpn000fvwwj2c52ffi1" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-VMware-CentOs" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/24/VMware-CentOs/" class="article-date">
-  <time datetime="2020-02-23T16:53:52.000Z" itemprop="datePublished">2020-02-24</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/24/VMware-CentOs/">VMware install CentOs with Nginx</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1, Install gcc.<br><code>yum install -y gcc</code></p>
-<p>2, Install perl library, the http module of nginx use pcre to parse regular expression.<br><code>yum install -y pcre pcre-devel</code></p>
-<p>3, Install zlib, zlib provides various zip and upzip ways, nginx use zlib to gzip the http packages.<br><code>yum install -y zlib zlib-devel</code></p>
-<p>4, Install openssl<br><code>yum install -y openssl openssl-devel</code></p>
-<p>5, Instal wget<br><code>yum install -y wget</code></p>
-<p>6, Download nginx<br><code>wget http://nginx.org/download/nginx-1.9.9.tar.gz</code></p>
-<p>7, Tar the package<br><code>tar -zxvf nginx-1.9.9.tar.gz</code></p>
-<p>8, Install</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;nginx-1.9.9</span><br><span class="line"></span><br><span class="line">make</span><br><span class="line"></span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
-
-<p>9, Startup the service<br><code>/nginx-1.9.9/sbin/nginx</code></p>
-<p>10, If you encounter the issue with the directory of error log, create one folder with a dummy error.log</p>
-<p>11, Check the status<br><code>ps -ef | grep nginx</code></p>
-<p>12, <code>ifconfig</code> to check the ip address</p>
-<p>13, Use the host window system to access the address with the ip address in browser.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/24/VMware-CentOs/" data-id="ckkcuetpi0006vwwj55zq3art" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nginx/" rel="tag">Nginx</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-springboot-autowired" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/22/springboot-autowired/" class="article-date">
-  <time datetime="2020-02-22T15:07:35.000Z" itemprop="datePublished">2020-02-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Java/">Java</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/22/springboot-autowired/">Springboot Usage of @Autowired</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Spring Team <strong>recommends</strong> “Always use constructor based dependency injection in your beans. Always use assertions for mandatory dependencies”.</p>
-<p>Before:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> UserService service;</span><br></pre></td></tr></table></figure>
-
-<p>After:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> UserService service;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">UserController</span><span class="params">(UserService service)</span> </span>&#123;</span><br><span class="line">   <span class="keyword">this</span>.service = service;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><font color="red">Main point is the sequence</font><br>Let’s see if below codes can work properly?</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> User user;</span><br><span class="line"><span class="keyword">private</span> String test;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">UserService</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.test = user.getUserName();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>The answer is no!</p>
-<p>Java will prioritize the constructor, and then inject the values to <code>@Autowired</code> User, so there will be NullPointerException when the constructor was executed.</p>
-<p>If we use the constructor injection, the problem will be solved.<br><strong>Can specify the order in which member variables are loaded</strong></p>
-<p>PS：Java变量的初始化顺序为：静态变量或静态语句块–&gt;实例变量或初始化语句块–&gt;构造方法–&gt;@Autowired</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/22/springboot-autowired/" data-id="ckkcuetpp000lvwwjf0ya52rf" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Springboot/" rel="tag">Springboot</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-springboot-CORS" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/16/springboot-CORS/" class="article-date">
-  <time datetime="2020-02-16T09:25:36.000Z" itemprop="datePublished">2020-02-16</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Java/">Java</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/16/springboot-CORS/">Springboot CORS Issue</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="What-is-CORS"><a href="#What-is-CORS" class="headerlink" title="What is CORS ?"></a>What is CORS ?</h2><blockquote>
-<p><strong>CORS</strong> full name is <strong>Cross Origin Resource Sharing</strong>, each page need to return a http header named <strong>Access-Control-Allow-Origin</strong> to allow other host to access.</p>
-</blockquote>
-<p>If a request need to be allowed CORS, we need to set up the <strong>Access-Control-Allow-Origin</strong> to determine what sites to access.hex</p>
-<p>Access-Control-Allow-Origin:<a href="https://www.google.com" target="_blank" rel="noopener">https://www.google.com</a>.</p>
-<h3 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution 1"></a>Solution 1</h3><p>Use <code>@CrossOrigin</code> annotation on <code>Controller</code></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/hello"</span>)</span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@CrossOrigin</span>(<span class="string">"https://www.google.com"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CrosTestController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"/world"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">helloWorld</span><span class="params">()</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="string">"Hello World!"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="Solution-2"><a href="#Solution-2" class="headerlink" title="Solution 2"></a>Solution 2</h3><p>Implement <code>WebMvcConfigurer</code><br>Create a new configuration class</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CorsConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> WebMvcConfigurer <span class="title">corsConfigurer</span><span class="params">()</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> WebMvcConfigurer() &#123;</span><br><span class="line">          <span class="meta">@Override</span></span><br><span class="line">          <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addCorsMappings</span><span class="params">(CorsRegistry registry)</span> </span>&#123;</span><br><span class="line">              registry.addMapping(<span class="string">"/**"</span>).</span><br><span class="line">                      allowedOrigins(<span class="string">"https://www.google.com"</span>).</span><br><span class="line">                      allowedMethods(<span class="string">"*"</span>).</span><br><span class="line">                      allowedHeaders(<span class="string">"*"</span>).</span><br><span class="line">                      allowCredentials(<span class="keyword">true</span>).</span><br><span class="line">                      exposedHeaders(HttpHeaders.SET_COOKIE).maxAge(<span class="number">3600L</span>);<span class="comment">//within 3600s, do not send the precheck request</span></span><br><span class="line">          &#125;</span><br><span class="line">      &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="Solution-3"><a href="#Solution-3" class="headerlink" title="Solution 3"></a>Solution 3</h3><p>Implement <code>Filter</code> interface to add some <code>Header</code> to solve the problem</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CorsFilter</span> <span class="keyword">implements</span> <span class="title">Filter</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doFilter</span><span class="params">(ServletRequest request, ServletResponse response, FilterChain chain)</span> <span class="keyword">throws</span> IOException, ServletException </span>&#123;</span><br><span class="line">        HttpServletResponse res = (HttpServletResponse) response;</span><br><span class="line">        res.addHeader(<span class="string">"Access-Control-Allow-Credentials"</span>, <span class="string">"true"</span>);</span><br><span class="line">        res.addHeader(<span class="string">"Access-Control-Allow-Origin"</span>, <span class="string">"*"</span>);</span><br><span class="line">        res.addHeader(<span class="string">"Access-Control-Allow-Methods"</span>, <span class="string">"GET, POST, DELETE, PUT"</span>);</span><br><span class="line">        res.addHeader(<span class="string">"Access-Control-Allow-Headers"</span>, <span class="string">"Content-Type,X-CAF-Authorization-Token,sessionToken,X-TOKEN"</span>);</span><br><span class="line">        <span class="keyword">if</span> (((HttpServletRequest)request).getMethod().equals(<span class="string">"OPTIONS"</span>)) &#123;</span><br><span class="line">            response.getWriter().println(<span class="string">"ok"</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        chain.doFilter(request, response)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(FilterConfig filterConfig)</span> <span class="keyword">throws</span> ServletException </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="If-the-response-header-cannot-be-retrieve"><a href="#If-the-response-header-cannot-be-retrieve" class="headerlink" title="If the response header cannot be retrieve"></a>If the response header cannot be retrieve</h3><p>We need to add one more setting</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">res.addHeader(&quot;Access-Control-Expose-Headers&quot;, &quot;x-auth-token&quot;)</span><br></pre></td></tr></table></figure>
-
-<p>Reference Link – <a href="https://blog.csdn.net/weixin_42036952/article/details/88564647" target="_blank" rel="noopener" title="CSDN Blog">CSDN Blog</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/16/springboot-CORS/" data-id="ckkcuetpn000hvwwjhg4z4ma4" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Springboot/" rel="tag">Springboot</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-  </nav>
 
 </section>
         
